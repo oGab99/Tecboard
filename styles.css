@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Unbounded:wght@200..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  ---color-background-one: black;
+  ---color-background-two: white;
+  ---color-primaria: white;
+  ---color-destaque: #9747ff;
+}
+
+body{
+  background-color: var(---color-background-one);
+  color: var(---color-primaria);
+}
+
+.cabecalho{
+  display: block;
+  margin: 75px 0 0 360px;
+}
+
+.titulo{
+  font-size: 64px;
+  font-family: "Unbounded", sans-serif;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.texto_explicativo{
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  text-align: center;
+  margin: 24px auto 0px;
+  width: 792px;
+}
+
+.titulo_destaque{
+  color: var(---color-destaque);
+}
+
+.button-one{
+  color: var(---color-primaria);
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  text-decoration: none;
+  background-color: var(---color-destaque);
+  width: 340px;
+  height: 66px;
+  display: block;
+  text-align: center;
+  line-height: 66px;
+  border-radius: 36px;
+  margin: 100px auto;
+}
+
+.button-one:hover{
+  background-color: #8244e8;
+}
+
+.imagem-celular{
+  width: 792px;
+  display: block;
+  height: 445px;
+  margin: 0 auto;
+}
+
+
+
+@media (max-width: 768px) {
+  
+.cabecalho{
+  margin:65px 0 0 60px;
+}
+
+.texto_explicativo{
+  width: 648px;
+}
+
+.imagem-celular{
+  width: 659px;
+}
+
+}
+
+@media (max-width: 375px){
+
+.cabecalho{
+  margin: 32px 0 0 16px;
+}
+
+.titulo{
+  font-size: 40px;
+}
+
+.texto_explicativo{
+  width: 341px;
+}
+
+.button-one{
+  font-size: 20px;
+  width: 251px;
+}
+
+.imagem-celular{
+  width: 340px;
+  height: 230px;
+}
+
+}
